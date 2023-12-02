@@ -1,9 +1,19 @@
+html,body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  background-color: var(--black);
+}
+
 :root{
-    /* Fonts */
-    
-    --title: 'Roboto', sans-serif;
-    --main-font: 'Sansita', sans-serif;
-    
+   
     /* Colors */
     
     --background: #3f006a0f;
@@ -29,14 +39,22 @@
   }
   
   
+/* Home Page */
+
+.title{
+  color: var(--off-white);
+}
+
+
 
 /* Footer */
+
 footer{
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     background-color: var(--off-white);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
     align-items: center;
     border-top: var(--border);
 }
@@ -46,3 +64,4 @@ footer{
   margin: 1rem; 
   margin-bottom: 10px;
 }
+
