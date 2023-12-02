@@ -1,4 +1,4 @@
 from django.shortcuts import render
+from views.generic
 
-# Create your views here.
-
+class
