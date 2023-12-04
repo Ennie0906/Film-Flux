@@ -45,7 +45,9 @@ main {
   color: var(--off-white);
 }
 
-
+.active{
+  border-bottom: 2px solid var(--blue);
+}
 
 /* Footer */
 

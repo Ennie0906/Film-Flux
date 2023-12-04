@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary_storage',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap5',
+    'films'
 ]
 
 MIDDLEWARE = [
