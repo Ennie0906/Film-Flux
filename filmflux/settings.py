@@ -14,6 +14,7 @@ from pathlib import Path
 import dj_database_url
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,17 +41,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
+    
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary',
-    'cloudinary_storage',
+    
+    
+
+    # apps
+    'home',
+    'films',
+    'djrichtextfield',
     'crispy_forms',
     'crispy_bootstrap5',
-    'films'
+    'cloudinary',
+    'cloudinary_storage',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -65,7 +74,19 @@ MIDDLEWARE = [
 
 SITE_ID = 1
 
+DJRICHTEXTFIELD_CONTRIB = {
+    'js': ['//cdn.ckeditor.com/4.14.0/standard/ckeditor.js'],
+    'init_template': 'djrichtextfield/init/ckeditor.js',
+    'settings':{
+        'toolbar': [
+            ['Format', 'Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList'], ['Undo', 'Redo'],
+            ['Maximize']
+        ],
+        'format_tags':'p;h1;h2;h3'
+    }
 
+}
 
 AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -174,9 +195,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 # Cloudinary
-DEFAULT_FILE_STORAGE = 'cloudinary.storage.storage.MediaCloudinaryStorage'
-CLOUDINARY_STORAGE = os.environ.get('CLOUDINARY_URL')
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

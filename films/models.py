@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -22,8 +23,7 @@ class Films(models.Model):
     user = models.ForeignKey(User, related_name='film_reviewer', on_delete=models.CASCADE)
     title = models.CharField(max_length=300, null=False, blank=False)
     description = models.CharField(max_length=500, null=False,blank=False)
-    instructions = RichTextField(max_length=10000, null=False,blank=False)
-    ingredients = RichTextField(max_length=10000, null=False,blank=False)
+    review = RichTextField(max_length=10000, null=False,blank=False)
     image = ResizedImageField(
         size=[400, None], quality=75, upload_to='films/', force_format='WEBP', blank=False, null=False
         )

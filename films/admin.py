@@ -9,8 +9,7 @@ class FilmsAdmin(admin.ModelAdmin):
         'title',
         'film_type',
         'rating',
-        'ingredients',
-        'instructions',
+        'review',
         'image',
     )
     list_filter = ('film_type',)
