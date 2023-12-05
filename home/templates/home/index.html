@@ -2,6 +2,10 @@
 
 {% block content %}
 
+{% if request.user.is_authenticated %}
+<h1>Hello, {{request.user.username}}</h1>
+{% endif %}
+
 <div class="container mt-5">
     <!-- Bootstrap 5 Jumbotron for a Nice Title -->
     <div class="jumbotron text-center title">

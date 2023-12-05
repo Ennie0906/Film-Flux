@@ -16,7 +16,8 @@
                             href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url}">Films</a>
+                        <a class="nav-link  {% if url_name == 'add_review' %}active{% endif %}"
+                            href="{% url 'add_review' %}">Add a Film</a>
                     </li>
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
