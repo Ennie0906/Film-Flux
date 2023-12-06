@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEVELOPMENT" in os.environ
 
-ALLOWED_HOSTS = ['8000-ennie0906-filmflux-w3w1wu28hvw.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-ennie0906-filmflux-w3w1wu28hvw.ws-eu106.gitpod.io','.herokuapp.com']
 
 
 # Application definition
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'cloudinary',
     'cloudinary_storage',
+    
 ]
 
 
