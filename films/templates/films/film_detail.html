@@ -18,12 +18,13 @@
 
             {% if request.user == film.user %}
             <div class="text-center">
-                <a href="" class="btn btn-primary w-25">Edit</a>
-                <a href="" class="btn btn-primary w-25">Delete</a>
+                <a href="{% url 'edit_film' film.id}" class="btn btn-primary w-25">Edit</a>
+                <a href="{% url 'delete_film' film.id %}" class="btn btn-primary w-25">Delete</a>
             </div>
             {% endif %}
         </div>
     </div>
+
     <div class="film-container">
         <div class="description p-3">
             <h2>Description</h2>

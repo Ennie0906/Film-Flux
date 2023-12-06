@@ -13,7 +13,7 @@
 
     <a href="{% url 'film_detail' film.id %}" class="films" aria-label="Click to view {{film.title}}">
         <div class="card m-3" style="width: 18rem;">
-            <img class="{{films.image.url}}" src="..." alt="{{film.image_alt}}">
+            <img class="" src="{{films.image.url}}" alt="{{film.image_alt}}">
             <div class="card-body">
                 <h2 class="card-title">{{film.title}}</h2>
                 <p class="card-text">{{film.description|truncatechars:100}}</p>

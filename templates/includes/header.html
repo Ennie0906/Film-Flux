@@ -19,10 +19,12 @@
                         <a class="nav-link {% if url_name == 'films' %}active{% endif %}" aria-current="page"
                             href="{% url 'films' %}">Films</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link  {% if url_name == 'add_review' %}active{% endif %}"
                             href="{% url 'add_review' %}">Add a Film</a>
                     </li>
+                    {% endif %}
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"

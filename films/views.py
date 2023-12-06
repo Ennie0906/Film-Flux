@@ -1,4 +1,6 @@
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import (CreateView, ListView, DetailView ,DeleteView, UpdateView)
+
+from django.contrib.auth.mixins import (UserPassesTestMixin, LoginRequiredMixin)
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -35,3 +37,24 @@ class AddReview(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddReview, self).form_valid(form)
+
+
+class EditFilm(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """Edit a film"""
+    template_name = 'films/edit_film.html'
+    model = Films
+    success_url = "/films/"
+    form_class = FilmForm
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
+class DeleteFilm(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ Delete a film """
+    model = Films
+    success_url = '/films/'
+    template_name = 'films/film_confirm_delete.html'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
