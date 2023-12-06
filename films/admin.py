@@ -3,13 +3,14 @@ from .models import Films
 
 # Register your models here.
 
+
 @admin.register(Films)
 class FilmsAdmin(admin.ModelAdmin):
     list_display = (
-        'title',
-        'film_type',
-        'rating',
-        'review',
-        'image',
+        "title",
+        "film_type",
+        "rating",
+        "review",
+        "image",
     )
-    list_filter = ('film_type',)
+    list_filter = ("film_type",)

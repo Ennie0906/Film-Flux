@@ -11,7 +11,7 @@
 
     {% for film in films %}
 
-    <a href="" class="films" aria-label="Click to view {{film.title}}">
+    <a href="{% url 'film_detail' film.id %}" class="films" aria-label="Click to view {{film.title}}">
         <div class="card m-3" style="width: 18rem;">
             <img class="{{films.image.url}}" src="..." alt="{{film.image_alt}}">
             <div class="card-body">

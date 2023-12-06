@@ -9,32 +9,38 @@ from cloudinary.models import CloudinaryField
 
 # Film Types
 FILM_TYPES = (
-    ('action', 'Action'),
-    ('comedy', 'Comedy'),
-    ('thriller', 'Thriller'),
-    ('horror', 'Horror')
+    ("action", "Action"),
+    ("comedy", "Comedy"),
+    ("thriller", "Thriller"),
+    ("horror", "Horror"),
 )
 
 
 class Films(models.Model):
 
-    """ A model to leave reviews """
+    """A model to leave reviews"""
 
-    user = models.ForeignKey(User, related_name='film_reviewer', on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name="film_reviewer", on_delete=models.CASCADE
+    )
     title = models.CharField(max_length=300, null=False, blank=False)
-    description = models.CharField(max_length=500, null=False,blank=False)
-    review = RichTextField(max_length=10000, null=False,blank=False)
+    description = models.CharField(max_length=500, null=False, blank=False)
+    review = RichTextField(max_length=10000, null=False, blank=False)
     image = ResizedImageField(
-        size=[400, None], quality=75, upload_to='films/', force_format='WEBP', blank=False, null=False
-        )
+        size=[400, None],
+        quality=75,
+        upload_to="films/",
+        force_format="WEBP",
+        blank=False,
+        null=False,
+    )
     image_alt = models.CharField(max_length=100, null=False, blank=False)
-    film_type = models.CharField(max_length=50, choices=FILM_TYPES, default='comedy')
+    film_type = models.CharField(max_length=50, choices=FILM_TYPES, default="comedy")
     rating = models.IntegerField()
     posted_date = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-posted_date']
+        ordering = ["-posted_date"]
 
     def __str__(self):
         return str(self.title)
-
