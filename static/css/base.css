@@ -67,5 +67,37 @@ footer{
   margin-bottom: 10px;
 }
 
-/* Films Page */
+/* Add a film Page */
 
+.textcolor{
+  color: var(--white);
+}
+
+/* Film Color */
+
+.film-page{
+  text-align: center;
+}
+
+/* Text styling */
+
+.underline{
+  text-decoration: underline;
+}
+
+.nounderline{
+  text-decoration:none;
+}
+
+/* Background color */
+
+.bg-color{
+  background-color: var(--background);
+}
+
+/* Hover */
+
+.films:hover {
+  text-decoration: underline; 
+  color: var(--blue);
+}

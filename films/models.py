@@ -8,12 +8,25 @@ from cloudinary.models import CloudinaryField
 
 
 # Film Types
-FILM_TYPES = (
+FILM_TYPES = [
     ("action", "Action"),
     ("comedy", "Comedy"),
     ("thriller", "Thriller"),
     ("horror", "Horror"),
-)
+    ("adventure", "Adventure"),
+    ("thriller", "Thriller"), 
+    ("anime", "Anime"),
+    ("war", "War"),
+    ("drama", "Drama"),
+    ("romance", "Romance"),
+    ("family", "Family"),
+    ("documentary", "Documentary"), 
+    ("science fiction", "Science Fiction"),
+    ("war", "War"),  
+    ("western", "Western"),
+    ("tv show", "TV Show"),  
+]
+
 
 
 class Films(models.Model):

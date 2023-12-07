@@ -6,6 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Films
 from .forms import FilmForm
+from django.urls import reverse_lazy
 
 
 class FilmList(ListView):
@@ -43,8 +44,10 @@ class EditFilm(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit a film"""
     template_name = 'films/edit_film.html'
     model = Films
-    success_url = "/films/"
     form_class = FilmForm
+
+    def get_success_url(self):
+        return reverse_lazy('films') 
 
     def test_func(self):
         return self.request.user == self.get_object().user

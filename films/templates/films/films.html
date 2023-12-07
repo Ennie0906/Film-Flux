@@ -5,13 +5,13 @@
 {% block content %}
 
 
-<h1 class="text-center p-2">New Releases</h1>
+<h1 class="text-center p-2 textcolor my-4">Add your own</h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
 
 
     {% for film in films %}
 
-    <a href="{% url 'film_detail' film.id %}" class="films" aria-label="Click to view {{film.title}}">
+    <a href="{% url 'film_detail' film.id %}" class="films nounderline" aria-label="Click to view {{film.title}}">
         <div class="card m-3" style="width: 18rem;">
             <img class="" src="{{films.image.url}}" alt="{{film.image_alt}}">
             <div class="card-body">

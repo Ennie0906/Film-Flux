@@ -4,38 +4,42 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container textcolor text-center underline">
     <div class="mt-3 p-1">
         <div class="film-img">
             <img src="{{film.image.url}}" alt="{{ film.image_alt}}">
         </div>
         <div class="film-detail">
-            <h1 class="text-center">{{ film.title}}</h1>
+            <h1 class="text-center my-3">{{ film.title}}</h1>
             <p class="text-center">Posted by {{film.user}} on {{film.posted_date}}</p>
             <hr>
+            <div class="description p-3">
+                <h2 class="underline">Description</h2>
+                <p>{{ film.description|safe}}</p>
+            </div>
             <p><strong>Rating: </strong> {{film.rating}}</p>
             <p><strong>Film Type: </strong> {{film.film_type}}</p>
-
-            {% if request.user == film.user %}
-            <div class="text-center">
-                <a href="{% url 'edit_film' film.id}" class="btn btn-primary w-25">Edit</a>
-                <a href="{% url 'delete_film' film.id %}" class="btn btn-primary w-25">Delete</a>
-            </div>
-            {% endif %}
         </div>
     </div>
 
     <div class="film-container">
-        <div class="description p-3">
+        <!-- <div class="description p-3">
             <h2>Description</h2>
             <p>{{ film.description|safe}}</p>
-        </div>
+        </div> -->
         <div class="review p-3">
             <h2>Review</h2>
             <p>{{ film.review|safe }}</p>
         </div>
     </div>
+    {% if request.user == film.user %}
+    <div class="text-center my-5">
+        <a href="{% url 'edit_film' film.id %}" class="btn btn-primary w-25">Edit</a>
+        <a href="{% url 'delete_film' film.id %}" class="btn btn-primary w-25">Delete</a>
+    </div>
+    {% endif %}
 </div>
+
 
 
 

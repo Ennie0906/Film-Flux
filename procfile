@@ -1,1 +1,1 @@
-web: gunicorn film-flux.wsgi
+web: gunicorn filmflux.wsgi

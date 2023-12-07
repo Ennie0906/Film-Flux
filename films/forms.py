@@ -8,7 +8,7 @@ class FilmForm(forms.ModelForm):
 
     class Meta:
         model = Films
-        fields = ["title", "review", "rating", "film_type", "image", "image_alt"]
+        fields = ["title", "review", "rating", "film_type", "image", "image_alt", "description"]
 
         review = forms.CharField(widget=RichTextWidget())
 
