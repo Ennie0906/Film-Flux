@@ -113,3 +113,95 @@ I decided to go with quite a few colors:
 * Confirm button is available for the user if user is undecisive
 
   <img width="327" alt="Screenshot 2023-12-07 at 18 30 16" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/ad84d7ec-7862-49f6-acf8-7ac7a95843fe">
+### Footer Social Links 
+* Users can use these links to connect with the sites social accounts (Does not actually take you to the sites pages)
+* Allows users to stay connected with the sites on social media platforms, keeping them informed about the latest dishes and events.
+
+  ## Future Features
+
+  ### Leave a comment
+  The ability to leave a comment on other users reviews. This ability I want to add allows users to connect with eachother and get eachothers opinion.
+
+  ## Favourites
+  I want to add this feature so users can favourite their films or films they would like watch. This feature would allow users to find films they would like or interested in for them to watch it later on.
+
+  ## Search Bar
+This feature will be going on for more easy accessibility for the user. 
+
+# Tools and Technologies used
+## Frameworks, libraries and programs used
+* Django Django served as the foundation of this project, used for the creation of models, forms, and views of the app.
+
+* Cloudinary Cloudinary was used as free cloud store CSS staticfiles.
+
+* Bootstrap 5.1 Bootstrap 5.1 enhanced the project's user interface, enabling responsive and visually appealing design.
+
+* ElephantSQL was chosen for its reliable PostgreSQL database hosting, ensuring efficient data management for the project.
+
+* Google Fonts was used to import the 'Prompt' font in the style.css file which is used on all text on the website. 
+
+* Git Git was employed for version control by utilizing the GitPod terminal to commit changes and push them to GitHub.
+
+* GitHub was used to store the project code after being pushed from gitpod.
+
+* Heroku was used to host the project.
+
+* Font Awesome was used for fonts on the site.
+
+* ChatGPT was used to improve copyright.
+
+* LucidChart was used to create my diagram Booking Model.
+
+  ## Languages used
+  * CSS3
+  * HTML5
+  * Python
+ 
+## Bugs 
+Currently the images are down which will be fixed as soon as possible.
+The sign out page isnt showing due to some error in the urls.
+The cards on the homepage is not showing for some error between the home app and films app
+The responsiveness is not tested yet due to cards not showing
+
+## Solved Bugs 
+* Could not get the edit button to display the form 
+ - I fixed this by linking the edit button by giving it a film.id
+
+   # Validation
+
+I used https://jigsaw.w3.org/css-validator/validator to validate my CSS3 
+
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| base.css |   <img width="1420" alt="Screenshot 2023-12-07 at 20 53 07" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/1f71baf2-2d02-4b89-9f77-5edba91a3c49"> | Pass |
+
+I used https://validator.w3.org/nu/ to validate my HTML
+
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| Sign up | <img width="1406" alt="Screenshot 2023-12-07 at 21 30 21" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/7bd5a945-fc67-4793-b00f-4b871cfc7122">| Heading error |
+| Log in | <img width="1424" alt="Screenshot 2023-12-07 at 21 31 59" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/1b55f37f-e476-46d6-9b85-3cd63f55aa6e">| Heading error |
+| Add a film | <img width="1424" alt="Screenshot 2023-12-07 at 21 36 26" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/fe63f065-7255-4778-bfdb-1091d4196ff5">
+| Heading error and attribute |
+
+# Deployment: 
+
+Deployment
+To deploy the project to Heroku, I followed these steps:
+
+* Creating Heroku App:
+* Logged into Heroku.
+* Selected 'Create New App' from the dashboard.
+* Chose a unique app name.
+* Selected region based on the location.
+* Clicked 'Create App'.
+* Connecting to GitHub:
+
+From the Heroku dashboard, navigated to the 'Deploy' tab.
+* Under 'Deployment Method', chose 'GitHub'.
+* Searched and selected the repository by name.
+* Clicked 'Connect'.
+* Setting Environment Variables:
+* Went to the 'Settings' tab.
+* Located 'Config Vars' and clicked 'Reveal Config Vars'.
+* Added the necessary variables.
