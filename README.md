@@ -5,6 +5,8 @@
 ## For a live preview of FilmFlux click this link.
 * https://filmfluxx-394da2dec566.herokuapp.com/
 
+<img width="1013" alt="Screenshot 2023-12-08 at 09 45 07" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/c9642756-2a40-4562-9c95-88b529b9ad81">
+
 
 # UX Design
 
