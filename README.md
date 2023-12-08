@@ -10,6 +10,13 @@
 
 # UX Design
 
+
+### Wireframe
+Personally I thought of the colors first for my project. The simple color scheme helped me lay out the rest of the page easier. It helped me visualize what I wanted for my project and how it would turn out to be.
+
+<img width="206" alt="Screenshot 2023-12-08 at 10 17 04" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/12ec1c86-ce92-4e78-9d96-ad2be98b5811">
+
+
 ### Design Thinking
 When I started this project, my goal was to create a film blog website that was modern and user friendly where people can review, add, delete film blogs and meet new people of the same genre/film.
 * Easy access to film reviews
