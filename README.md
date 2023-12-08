@@ -5,8 +5,17 @@
 ## For a live preview of FilmFlux click this link.
 * https://filmfluxx-394da2dec566.herokuapp.com/
 
+<img width="1013" alt="Screenshot 2023-12-08 at 09 45 07" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/c9642756-2a40-4562-9c95-88b529b9ad81">
+
 
 # UX Design
+
+
+### Wireframe
+Personally I thought of the colors first for my project. The simple color scheme helped me lay out the rest of the page easier. It helped me visualize what I wanted for my project and how it would turn out to be.
+
+<img width="206" alt="Screenshot 2023-12-08 at 10 17 04" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/12ec1c86-ce92-4e78-9d96-ad2be98b5811">
+
 
 ### Design Thinking
 When I started this project, my goal was to create a film blog website that was modern and user friendly where people can review, add, delete film blogs and meet new people of the same genre/film.
@@ -211,13 +220,15 @@ I used Python Linter to validate my python code.
 | #13 Clicking on the Links in the Social Links footer takes users to designated sites | Click icons on the footer | N/A | Pass |
 
 
+# Browser Testing
+### Firefox 
+Works perfectly no errors
 
+### Safari
+Works perfectly no errors
 
-
-
-
-
-
+My websites performance by lighthouse.
+![lighthouse-filmflux](https://github.com/Ennie0906/Film-Flux/assets/141347750/a335f6c7-e0ef-4d8c-a146-d147ab5c3cf2)
 
 # Deployment: 
 
@@ -240,3 +251,16 @@ From the Heroku dashboard, navigated to the 'Deploy' tab.
 * Went to the 'Settings' tab.
 * Located 'Config Vars' and clicked 'Reveal Config Vars'.
 * Added the necessary variables.
+
+  
+# Credits 
+* Chat GPT for simple debugging
+* Am I Responsive for my banner screenshot
+* W3Schools for teaching me Django tricks
+* YouTube for teaching me how to do a 403 page.
+
+# Acknowledgements
+
+* I want to thank Richey Malhotra for being there for me and helping me progress in this career. 
+* I want to thank EVERYONE in this bootcamp for being such supportive and friendly.
+* I want to thank Kieran, Rachel, Stacey for constantly having to put up with me and guiding me through this course. Not only guiding me about coding and about life.
