@@ -211,13 +211,15 @@ I used Python Linter to validate my python code.
 | #13 Clicking on the Links in the Social Links footer takes users to designated sites | Click icons on the footer | N/A | Pass |
 
 
+# Browser Testing
+### Firefox 
+Works perfectly no errors
 
+### Safari
+Works perfectly no errors
 
-
-
-
-
-
+My websites performance by lighthouse.
+![lighthouse-filmflux](https://github.com/Ennie0906/Film-Flux/assets/141347750/a335f6c7-e0ef-4d8c-a146-d147ab5c3cf2)
 
 # Deployment: 
 
