@@ -1,110 +1,242 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FilmFlux
 
-Welcome Enes Arici,
+### Welcome to Filmflux! Your go-to destination for films.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## For a live preview of FilmFlux click this link.
+* https://filmfluxx-394da2dec566.herokuapp.com/
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+# UX Design
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Design Thinking
+When I started this project, my goal was to create a film blog website that was modern and user friendly where people can review, add, delete film blogs and meet new people of the same genre/film.
+* Easy access to film reviews
+* A navbar to navigate through pages
+* Being able to create an account and login
+* A film card able to edit and delete reviews
+* Add a film page
 
-`python3 -m http.server`
+# User Stories
 
-A blue button should appear to click: _Make Public_,
+* Create a film review
+  - As a site user I want to add my favourite films and add my personal review on the film so that I can view all the films I have watched and reviewed.
+* View a film review
+  - As a site user I want view films and the reviews so that I can watch them in my free time.
+* Edit a film
+  - As a site user I want to edit films so that I can give it my own personal opinion.
+* Delete a film
+  - As a site user I want to delete my review so that I can delete it if I change my decision.
+* Navigation Bar
+  - As a site user I want to navigate through the navbar so that I can easily navigate through the website.
+* Footer Social Links
+  - As a site user I can click on social links that I can follow the restaurant on various social media pages.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ ### Database Chart
 
-A blue button should appear to click: _Make Public_,
+ I created a chart for my CRUD functionality so I am able to use this image and chart to visualize the model I want in my project.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ # Design
 
-To log into the Heroku toolbelt CLI:
+## Home Page
+  
+* Laying out all the cards (Films) across the page so the user can easily see which films are rated and liked by other people.
+*  Navbar that includes, register, login, films and add your own film.
+  
+## Log In Page
+* In this page I want the user to be able to login to their existing account
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Register Page
+* In this page I want the user to be able to create a account.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Add a Film
+* In this page I want the logged in user to be able to view, create, delete and update their films.
 
-------
+## Logout Page
+* Here I want the user to be able to logout of their account.
 
-## Release History
+## Fonts
+* I decided to go simple and go with Times New Roman for the text.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Colors
+I decided to go with quite a few colors:
+* Black: #3f006a0f;
+* Blue: #0d6efd;
+* Black: #000;
+* White: #f6f6f6;
+* White: #fff;
+* Orange: #ffbf50;
 
-**September 20 2023:** Update Python version to 3.9.17.
+# Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Existing Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Navbar
+* The Navigation bar includes films, add a film, login, register and sign in
+* It is visible on all pages and includes all the navigation links
+* The navbar is the most crucial part as it simplifies the navigation of the website
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  <img width="1440" alt="Screenshot 2023-12-07 at 17 11 57" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/e94e3448-09ee-414c-b978-52c30eebde9a">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Registration Page 
+* Registration allows users to add films
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  <img width="732" alt="Screenshot 2023-12-07 at 17 18 54" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/006701ec-4a06-45bb-9ee6-e0a66ae1c188">
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Sign In 
+* Sign In feature allows users to sign in and add in reviews or remove them.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  <img width="720" alt="Screenshot 2023-12-07 at 17 22 48" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/3c9c3b96-e0f5-4e16-8256-35d39966be2e">
+### Add a film form
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Allows user to create a film review
+* Users can add image, add their own review about the film alongside a rating out 10
+* User can see who posted the app with time and date
+  <img width="758" alt="Screenshot 2023-12-07 at 18 09 52" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/c4a22c78-c1c5-4df9-8c96-7dc3c618d30e">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### User Review
+* Provides user when it was edited and uploaded
+* The user can easily see the review, description and the film type about the page.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  <img width="1247" alt="Screenshot 2023-12-07 at 18 19 15" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/a4a1094f-98db-4af8-964c-71e014b74b6b">
+### Update Film 
+* If decision is changed you can simply edit the review
+* Allows users to change review, image, rating, description and the film type
+* Saves users time and effort instead of adding a new one
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<img width="1108" alt="Screenshot 2023-12-07 at 18 25 50" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/4a2dc6cd-74b3-4cb3-b082-91f44dd797c0">
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Delete Film
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* If user is not happy with review they can delete it
+* Confirm button is available for the user if user is undecisive
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  <img width="327" alt="Screenshot 2023-12-07 at 18 30 16" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/ad84d7ec-7862-49f6-acf8-7ac7a95843fe">
+### Footer Social Links 
+* Users can use these links to connect with the sites social accounts (Does not actually take you to the sites pages)
+* Allows users to stay connected with the sites on social media platforms, keeping them informed about the latest dishes and events.
 
-------
+  ## Future Features
 
-## FAQ about the uptime script
+  ### Leave a comment
+  The ability to leave a comment on other users reviews. This ability I want to add allows users to connect with eachother and get eachothers opinion.
 
-**Why have you added this script?**
+  ## Favourites
+  I want to add this feature so users can favourite their films or films they would like watch. This feature would allow users to find films they would like or interested in for them to watch it later on.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  ## Search Bar
+This feature will be going on for more easy accessibility for the user. 
 
-**How will this affect me?**
+# Tools and Technologies used
+## Frameworks, libraries and programs used
+* Django Django served as the foundation of this project, used for the creation of models, forms, and views of the app.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Cloudinary Cloudinary was used as free cloud store CSS staticfiles.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Bootstrap 5.1 Bootstrap 5.1 enhanced the project's user interface, enabling responsive and visually appealing design.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* ElephantSQL was chosen for its reliable PostgreSQL database hosting, ensuring efficient data management for the project.
 
-**So….?**
+* Google Fonts was used to import the 'Prompt' font in the style.css file which is used on all text on the website. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Git Git was employed for version control by utilizing the GitPod terminal to commit changes and push them to GitHub.
 
-**Can I opt out?**
+* GitHub was used to store the project code after being pushed from gitpod.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Heroku was used to host the project.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Font Awesome was used for fonts on the site.
 
-**Anything more?**
+* ChatGPT was used to improve copyright.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* LucidChart was used to create my diagram Booking Model.
 
----
+  ## Languages used
+  * CSS3
+  * HTML5
+  * Python
+ 
+## Bugs 
+Currently the images are down which will be fixed as soon as possible.
+The sign out page isnt showing due to some error in the urls.
+The cards on the homepage is not showing for some error between the home app and films app
+The responsiveness is not tested yet due to cards not showing
 
-Happy coding!
+## Solved Bugs 
+* Could not get the edit button to display the form 
+ - I fixed this by linking the edit button by giving it a film.id
+
+   # Validation
+
+I used https://jigsaw.w3.org/css-validator/validator to validate my CSS3 
+
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| base.css |   <img width="1420" alt="Screenshot 2023-12-07 at 20 53 07" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/1f71baf2-2d02-4b89-9f77-5edba91a3c49"> | Pass |
+
+I used https://validator.w3.org/nu/ to validate my HTML
+
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| Sign up | <img width="1406" alt="Screenshot 2023-12-07 at 21 30 21" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/7bd5a945-fc67-4793-b00f-4b871cfc7122">| Heading error |
+| Log in | <img width="1424" alt="Screenshot 2023-12-07 at 21 31 59" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/1b55f37f-e476-46d6-9b85-3cd63f55aa6e">| Heading error |
+| Add a film | <img width="1424" alt="Screenshot 2023-12-07 at 21 36 26" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/fe63f065-7255-4778-bfdb-1091d4196ff5">| Heading error and attribute |
+
+I used Python Linter to validate my python code.
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| URLS | <img width="1347" alt="Screenshot 2023-12-08 at 08 36 56" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/abb56900-5b04-40b2-9ad4-df42218f9b16">| Passed |
+| Film Views | <img width="1339" alt="Screenshot 2023-12-08 at 08 40 34" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/6d6a2f70-feab-4aa9-921d-a2e55b838520">| Lines too long |
+| Film Models | <img width="1325" alt="Screenshot 2023-12-08 at 08 41 30" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/c4c7c413-2f6c-4963-9f0f-b84a9fd6556f">| Lines too long |
+| Film Form | <img width="1359" alt="Screenshot 2023-12-08 at 08 42 34" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/f68a1d55-3ff9-4830-b01d-56cf4dae6d75">| Lines too long |
+| Admin | <img width="1282" alt="Screenshot 2023-12-08 at 08 43 00" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/61895fdc-4b05-4db1-94f4-c3374833c821">| Passed |
+
+# Manuel Testing 
+
+| Test | Action | Notes | Notes |
+| :---         |     :---:      |          ---: |          ---: |
+| #1 Clicking on logo name redirect user to homepage | Click the logo name | N/A | Pass |
+| #2 Clicking on the Home in the navbar will redirect user to homepage | Click Home tab | N/A | Pass |
+| #3 Clicking on the Films in the navbar will redirect user to Films page | Click Film tab | N/A | Pass |
+| #4 Clicking on the Register in the navbar will redirect user to the Sign up page | Click Register tab | N/A | Pass |
+| #5 Clicking on the Sign In in the navbar will redirect user to the Sign In page | Click Sign In tab | N/A | Pass |
+| #6 WHEN LOGGED IN clicking on the add a film tab will open a form to add a film | Click Add a film tab | N/A | Pass |
+| #7 WHEN LOGGED IN clicking on the Logout | Click Logout tab | N/A | Pass |
+| #8 WHEN LOGGED IN clicking on the add a film button and adds users film with review | Click Add a film | N/A | Pass |
+| #9 WHEN LOGGED IN clicking on the edit button and users can edit their reviews | Click Edit | N/A | Pass |
+| #10 WHEN LOGGED IN clicking on the delete and users can delete their reviews | Click Delete | N/A | Pass |
+| #11 Clicking on the Click on the homepage and users can see the films | Click Click me | In production | Fail |
+| #12 Clicking on the Learn me on the homepage and users can see details about the film | Click Learn more | N/A | Pass |
+| #13 Clicking on the Links in the Social Links footer takes users to designated sites | Click icons on the footer | N/A | Pass |
+
+
+
+
+
+
+
+
+
+
+# Deployment: 
+
+Deployment
+To deploy the project to Heroku, I followed these steps:
+
+* Creating Heroku App:
+* Logged into Heroku.
+* Selected 'Create New App' from the dashboard.
+* Chose a unique app name.
+* Selected region based on the location.
+* Clicked 'Create App'.
+* Connecting to GitHub:
+
+From the Heroku dashboard, navigated to the 'Deploy' tab.
+* Under 'Deployment Method', chose 'GitHub'.
+* Searched and selected the repository by name.
+* Clicked 'Connect'.
+* Setting Environment Variables:
+* Went to the 'Settings' tab.
+* Located 'Config Vars' and clicked 'Reveal Config Vars'.
+* Added the necessary variables.
