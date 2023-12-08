@@ -38,7 +38,7 @@ When I started this project, my goal was to create a film blog website that was 
 * Navigation Bar
   - As a site user I want to navigate through the navbar so that I can easily navigate through the website.
 * Footer Social Links
-  - As a site user I can click on social links that I can follow the restaurant on various social media pages.
+  - As a site user I can click on social links that I can follow the film site on various social media pages.
 
 
  ### Database Chart
