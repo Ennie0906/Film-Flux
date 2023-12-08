@@ -230,6 +230,18 @@ Works perfectly no errors
 My websites performance by lighthouse.
 ![lighthouse-filmflux](https://github.com/Ennie0906/Film-Flux/assets/141347750/a335f6c7-e0ef-4d8c-a146-d147ab5c3cf2)
 
+# Credits 
+* Chat GPT for simple debugging
+* Am I Responsive for my banner screenshot
+* W3Schools for teaching me Django tricks
+* YouTube for teaching me how to do a 403 page.
+
+# Acknowledgements
+
+* I want to thank Richey Malhotra for being there for me and helping me progress in this career. 
+* I want to thank EVERYONE in this bootcamp for being such supportive and friendly.
+* I want to thank Kieran, Rachel, Stacey for constantly having to put up with me and guiding me through this course. Not only guiding me about coding and about life.
+
 # Deployment: 
 
 Deployment
