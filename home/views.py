@@ -1,10 +1,16 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-
-# Create your views here.
+from films.models import Films
 
 class Index(TemplateView):
     template_name = 'home/index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        films = Films.objects.all()  # Adjust this query based on your model
+        context['films'] = films
+        return context
+
 
 
 # def home(request):

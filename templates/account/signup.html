@@ -6,7 +6,7 @@
 {% endblock title %}
 
 {% block content %}
-<div class="container text-center">
+<div class="container text-center my-5 w-50">
     <h1>{% trans "Sign Up" %}</h1>
 
     <p>
@@ -15,7 +15,7 @@
     </p>
 
 
-    <form action="{% url 'account_signup' %}" method="POST" id="signup_form" class="form p-2">
+    <form action="{% url 'account_signup' %}" method="POST" id="signup_form" class="form p-2 textcolor">
         {% csrf_token %}
         {{ form|crispy }}
         {% if redirect_field_value %}

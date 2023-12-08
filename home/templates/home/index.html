@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 {% if request.user.is_authenticated %}
@@ -15,17 +15,53 @@
 </div>
 
 
-
-<div class="container d-flex justify-content-evenly mt-5">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h3>Barbie</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+<div class="container info-text mx-auto textcolor">
+    {% for film in films %}
+    <div class="row">
+        <div class="col-md-6 pb-2 pt-2 text-center text-md-left">
+            <img src="{{ film.image.url }}" alt="{{ film.title }}">
+            <h3>{{ films.title }}</h3>
+            <p>{{ films.description|truncatechars:100 }}</p>
+            <a href="{% if film.id %}{% url 'film_detail' film.id %}{% endif %}">Learn More</a>
         </div>
+        <div class="col-md-6 pb-2 pt-2 text-center text-md-left">
+            <img src="{{ film.image.url }}" alt="{{ film.title }}">
+            <h3>{{ films.title }}</h3>
+            <p>{{ films.description|truncatechars:100 }}</p>
+            <a href="{% if film.id %}{% url 'film_detail' film.id %}{% endif %}">Learn More</a>
+        </div>
+        <div class="container textcolor">
+            <div class="row text-center">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="{{ signup_url }}" class="btn btn-primary textcolor">Click ME</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="card" style="width: 18rem;">
+    {% endfor %}
+</div>
+
+
+
+</div>
+{% endblock %}
+
+
+
+<!-- 
+<div class="container d-flex justify-content-evenly my-5 textcolor">
+    {% for film in films %}
+    <div class="film">
+        <img src="{{ films.image.url }}" alt="{{ film.title }}">
+        <h3>{{ film.title }}</h3>
+        <p>{{ film.description|truncatechars:100 }}</p>
+        <a href="{% url 'film_detail' film.id %}">Learn More</a>
+    </div>
+    {% endfor %}
+
+</div> -->
+<!-- <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
             <h3>Batman</h3>
@@ -48,10 +84,4 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
         </div>
-    </div>
-
-
-</div>
-
-
-{% endblock %}
+    </div> -->
