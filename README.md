@@ -181,8 +181,43 @@ I used https://validator.w3.org/nu/ to validate my HTML
 | :---         |     :---:      |          ---: |
 | Sign up | <img width="1406" alt="Screenshot 2023-12-07 at 21 30 21" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/7bd5a945-fc67-4793-b00f-4b871cfc7122">| Heading error |
 | Log in | <img width="1424" alt="Screenshot 2023-12-07 at 21 31 59" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/1b55f37f-e476-46d6-9b85-3cd63f55aa6e">| Heading error |
-| Add a film | <img width="1424" alt="Screenshot 2023-12-07 at 21 36 26" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/fe63f065-7255-4778-bfdb-1091d4196ff5">
-| Heading error and attribute |
+| Add a film | <img width="1424" alt="Screenshot 2023-12-07 at 21 36 26" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/fe63f065-7255-4778-bfdb-1091d4196ff5">| Heading error and attribute |
+
+I used Python Linter to validate my python code.
+| File | Screenshot | Notes |
+| :---         |     :---:      |          ---: |
+| URLS | <img width="1347" alt="Screenshot 2023-12-08 at 08 36 56" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/abb56900-5b04-40b2-9ad4-df42218f9b16">| Passed |
+| Film Views | <img width="1339" alt="Screenshot 2023-12-08 at 08 40 34" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/6d6a2f70-feab-4aa9-921d-a2e55b838520">| Lines too long |
+| Film Models | <img width="1325" alt="Screenshot 2023-12-08 at 08 41 30" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/c4c7c413-2f6c-4963-9f0f-b84a9fd6556f">| Lines too long |
+| Film Form | <img width="1359" alt="Screenshot 2023-12-08 at 08 42 34" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/f68a1d55-3ff9-4830-b01d-56cf4dae6d75">| Lines too long |
+| Admin | <img width="1282" alt="Screenshot 2023-12-08 at 08 43 00" src="https://github.com/Ennie0906/Film-Flux/assets/141347750/61895fdc-4b05-4db1-94f4-c3374833c821">| Passed |
+
+# Manuel Testing 
+
+| Test | Action | Notes | Notes |
+| :---         |     :---:      |          ---: |          ---: |
+| #1 Clicking on logo name redirect user to homepage | Click the logo name | N/A | Pass |
+| #2 Clicking on the Home in the navbar will redirect user to homepage | Click Home tab | N/A | Pass |
+| #3 Clicking on the Films in the navbar will redirect user to Films page | Click Film tab | N/A | Pass |
+| #4 Clicking on the Register in the navbar will redirect user to the Sign up page | Click Register tab | N/A | Pass |
+| #5 Clicking on the Sign In in the navbar will redirect user to the Sign In page | Click Sign In tab | N/A | Pass |
+| #6 WHEN LOGGED IN clicking on the add a film tab will open a form to add a film | Click Add a film tab | N/A | Pass |
+| #7 WHEN LOGGED IN clicking on the Logout | Click Logout tab | N/A | Pass |
+| #8 WHEN LOGGED IN clicking on the add a film button and adds users film with review | Click Add a film | N/A | Pass |
+| #9 WHEN LOGGED IN clicking on the edit button and users can edit their reviews | Click Edit | N/A | Pass |
+| #10 WHEN LOGGED IN clicking on the delete and users can delete their reviews | Click Delete | N/A | Pass |
+| #11 Clicking on the Click on the homepage and users can see the films | Click Click me | In production | Fail |
+| #12 Clicking on the Learn me on the homepage and users can see details about the film | Click Learn more | N/A | Pass |
+| #13 Clicking on the Links in the Social Links footer takes users to designated sites | Click icons on the footer | N/A | Pass |
+
+
+
+
+
+
+
+
+
 
 # Deployment: 
 
